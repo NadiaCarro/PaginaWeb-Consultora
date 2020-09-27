@@ -1,0 +1,236 @@
+
+/*HEADER*/
+#header{
+    background-image: url("../images/pistaesp.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    height: auto;
+    width: auto;
+}
+    
+h1 {
+    font-family: 'Tajawal', sans-serif;
+    color: rgba(255, 255, 255,0.9); 
+    text-shadow: 4px 4px 4px rgb(29, 63, 106) ; 
+    font-weight: bold;
+    text-align: right;
+    font-size: 4em;
+    padding-top: 20vh;
+}
+.shadow{
+    box-shadow: 6px 6px 10px rgba(0,0,0,9) ;
+    -moz-box-shadow: 6px 6px 10px rgba(0,0,0,9) ; /*Mozzilla*/
+    -o-box-shadow: 6px 6px 10px rgba(0,0,0,9) ; /*Opera*/
+}
+/*FIN HEADER*/
+
+/*ACERCA DE NOSOTROS*/
+#aboutus{
+    min-height: 90vh;
+    height: auto;
+    width: auto;
+    
+}
+
+.box-mis-vis{
+    background-image: url("../images/instrumentos.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: auto;
+    padding: 2rem;
+}
+.box-mv-des{
+    min-height:150px;
+    height:auto;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.texto-mis-vis{
+    font-size: 40px;
+    color:white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px rgba(20, 20, 20,1) ; 
+}
+/*FIN ACERCA DE NOSOTROS*/
+
+
+/*SERVICIOS*/
+#servicios{
+    min-height: 90vh;
+    height: auto;
+}
+
+.box-serv{
+    min-height: 250px;
+    height: auto;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+.box-descrip{
+    min-height: 170px;
+    background-color:rgb(61, 59, 59);
+    padding: 10px 10px 10px 10px;
+    height:auto;
+    border-radius: 10px;
+}
+
+.tit-serv{
+    padding:5px;
+    font-size: 25px;
+    color: rgb(13, 7, 29);
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255,0.5) ;
+}
+.texto-serv{
+    font-size: 15px;
+    color:white;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*FIN SERVICIOS*/
+
+/*CAPACITACIONES*/
+#cap{
+
+    min-height: 90vh;
+    height: auto;
+}
+.box-cap{
+    background-color: rgba(29, 63, 106, 0.9);
+    padding: 2px;
+    border-radius: 5px;
+    margin:5px;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    height: auto;
+}
+.texto-cap{
+    font-size: 30px;
+    color:white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 4px 4px 4px rgba(20, 20, 20,1) ; 
+}
+#video-background {
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-size: cover;
+}
+/*FIN CAPACITACIONES*/
+
+/*CONTACTO*/
+#contacto{
+    min-height: 90vh;
+    height: auto;
+}
+.boton-contacto{
+    padding: 10px 20px;
+    background-color: gray;
+    font-size:20px;
+    color:white;
+}
+.boton-contacto:hover{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(20, 20, 20,1) ; 
+}
+/*FIN CONTACTO*/
+
+/*PAGINA EXTERNA CONTACTO*/
+#video-background-contacto {
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    z-index: -100;
+
+    background-size: cover;
+}
+#form-contacto{
+    min-height: 85vh;
+    height: auto;
+    width: auto;
+    margin-top:10vh;
+}
+.box-form{
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.8);
+}
+.box-contacto{
+    min-height: 85vh;
+    height:auto;
+    width: auto;
+}
+/*FIN PAGINA EXTERNA CONTACTO*/
+
+
+/*FOOTER*/
+#pie-pag{
+    padding: 0.5vh;
+    background: lightgray;
+    height: 5vh; 
+    text-align: center;
+}
+/*FIN FOOTER*/
+
+.texto-titulos{
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*BARRA DE NAVEGACION*/
+#barra-nav{
+    height: 10vh;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+}
+
+.texto-nav{
+    font-size: 20px;
+}
+.texto-nav:hover{
+    color:rgb(29, 63, 106);
+    transform:scale(1.04); 
+}
+.icon{
+    font-size: 40px;
+    color:rgb(29, 63, 106);
+}
+.icon:hover{
+    color: black;
+    transform:scale(1.5) rotate(-360deg); 
+    transition-duration: 400ms;
+}
+/*FIN DE BARRA DE NAVEGACION*/

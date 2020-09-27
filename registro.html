@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a5d6270042.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Barra Nav-->
+    <nav id="barra-nav" class="navbar navbar-expand-lg navbar-light bg-light" >
+     <a href="./index.html"><img src="./images/ciagec.jpg"  alt="CIAGEC" height= "55px" class="mr-3 mb-2"></a> 
+      <button class="navbar-toggler" type="button" style="margin-bottom: 1vh,margin-top=1vh;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-light bg-light" id="navbarSupportedContent" style="padding: 1vh;">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link texto-nav" href="./index.html">INICIO <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texto-nav " href="./index.html#acercadenos">SOBRE NOSOTROS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle texto-nav " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICIOS</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./index.html#serv">Certificación 121,135,145</a>
+              <a class="dropdown-item" href="./index.html#serv">Certificación 141,142,147</a>
+              <a class="dropdown-item" href="./index.html#serv">Aprobación de Operaciones Especiales/MEL</a>
+              <a class="dropdown-item" href="./index.html#serv">Presentación de Manuales</a>
+              <a class="dropdown-item" href="./index.html#serv">Implementación del SMS</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./index.html#serv">Otros</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle texto-nav " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CAPACITACIONES</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./index.html#capac">SMS</a>
+                <a class="dropdown-item" href="./index.html#capac">CRM</a>
+                <a class="dropdown-item" href="./index.html#capac">FFHH</a>
+                <a class="dropdown-item" href="./index.html#capac">Mercancias Peligrosas</a>
+                <a class="dropdown-item" href="./index.html#capac">Sistemas de Calidad Aeronautica (ISO 9001/2015 y AC 9100)</a>
+                <a class="dropdown-item" href="./index.html#capac">Certificaciones y normativa FAA, APA, ANAC, DGAC</a> 
+              </div>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link texto-nav " href="./registro.html">CONTACTO</a>
+          </li>
+        </ul>
+      <a href="https://api.whatsapp.com/send?phone=5491168306640&text=Buen%20d%C3%ADa,%20estuve%20viendo%20los%20servicios%20que%20ofrecen%20en%20CIAGEC%20y%20quer%C3%ADa%20consultarle%20sobre" target="_blank">
+          <i class="fab fa-whatsapp-square icon mr-1"></i>
+      </a>
+      <a href="mailto:ciagec.consultora@gmail.com?Subject=Obetener%20Información%20de%20CIAGEC" target="_blank">
+          <i class="fas fa-envelope-square icon mr-1"></i>            
+      </a>
+      <a href="https://www.linkedin.com/in/nadiacarro/" target="_blank">
+          <i class="fab fa-linkedin icon mr-1"></i>
+      </a>
+      </div>
+  </nav>
+    <!--Formulario-->
+    <section id="form-contacto" class="container-fluid box-contacto">
+        <video id="video-background-contacto" src="images/video-cont.mp4" autoplay preload muted loop>
+        </video>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-6 col-lg-6 col-xs-12 box-form p-2 mt-2">
+                    <h2 class="text-white text-center">CONTACTO</h2>
+                    <form method="POST" action="#" class="p-3">
+                        <div class="form-group">
+                            <label for="nombre" class="text-white">Nombre Completo:<span class="text-danger">* </span> </label>
+                            <input class="form-control" type="text" id="nombre" required placeholder="Nombre completo"> 
+                        </div>
+                        <div class="form-group">
+                            <label for="mail" class="text-white">Mail:<span class="text-danger">* </span></label>
+                            <input class="form-control" type="text" id="mail" required placeholder="ejemplo@correo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="mail" class="text-white">Telefono:</label>
+                            <input class="form-control" type="text" id="mail" required placeholder="Numero de telefono">
+                        </div>
+                        <div class="form-group">
+                            <label class="text-white" for="msj">Consulta:<span class="text-danger">* </span></label>
+                            <textarea class="form-control" id="msj" required placeholder="Escriba su consulta y a la brevedad nos estaremos poniendo en contacto con usted."></textarea>
+                        </div>
+                        <button class="btn boton-contacto btn-outline-secondary btn-block">Enviar consulta</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <!--FOOTER-->
+    <footer id="pie-pag" class="container-fluid">
+        Copyright © CIAGEC
+    </footer>
+   
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
+
+</body>
+</html>
